@@ -1,0 +1,5 @@
+rootProject.name = 'PassbaseDemo'
+include ':@passbase_react-native-passbase'
+project(':@passbase_react-native-passbase').projectDir = new File(rootProject.projectDir, '../node_modules/@passbase/react-native-passbase/android')
+apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
+include ':app'
